@@ -53,7 +53,19 @@ This repository contains JavaScript code that generates comprehensive PowerPoint
    node ppt--3.js
    ```
 
-4. **Find your generated presentation** in the project directory!
+4. **Find your generated presentation** in the project directory.
+
+### 🧹 Repository cleanup (recommended)
+
+If `node_modules` was previously committed and you want to keep it local only:
+
+```bash
+git rm -r --cached node_modules
+echo "node_modules/" >> .gitignore
+git add .gitignore
+git commit -m "Remove node_modules from repo and add to .gitignore"
+git push
+```
 
 ### 📁 Files Included
 
